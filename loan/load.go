@@ -16,7 +16,7 @@ func main() {
 	getStartAmount()
 	getPersentage()
 	finalSum = calcFinalSum(startAmount, length)
-	fmt.Printf("Через %.d лет выполучите %.2f рублей.", length, finalSum)
+	fmt.Printf("Через %d лет выполучите %.2f рублей.", length, finalSum)
 }
 
 func getStartAmount() {
@@ -42,6 +42,5 @@ func calcFinalSum(amount float64, l uint) float64 {
 	} else {
 		total = calcFinalSum(amount, l-1) * (1 + percentage / 100)
 	}
-	fmt.Println(total)
 	return total
 }
