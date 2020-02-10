@@ -1,6 +1,7 @@
 package main
 
 import (
+	"GoCourse/pkg/mod/golang.org/x/tools@v0.0.0-20191030062658-86caa796c7ab/go/ssa/interp/testdata/src/os"
 	"fmt"
 	"math"
 )
@@ -23,6 +24,7 @@ func getCathetus(s string) float64 {
 	fmt.Println(s)
 	if _, err := fmt.Scan(&c); err != nil {
 		fmt.Println("Введено некоректное значение")
+		os.Exit(1)
 	}
 	return c
 }
