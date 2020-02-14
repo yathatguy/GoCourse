@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/yathatguy/numInput"
+	"github.com/yathatguy/GoCourse/internal/numInput"
 )
 
 func main() {
