@@ -19,34 +19,28 @@ func inputData(msg string) (data string){
 }
 
 func EnterIntNumber(msg string) int {
-	for {
-		num, err := strconv.ParseFloat(inputData(msg), 32)
-		if err == nil {
-			// Ввод числа прошел без ошибок
-			return int(num)
-		}
-		log.Fatalln("unable to parse input")
+	data := inputData(msg)
+	num, err := strconv.ParseInt(data, 10, 32)
+	if err != nil {
+		log.Fatalf("unable to parse input: %s", err)
 	}
+	return int(num)
 }
 
 func EnterFloat32Number(msg string) float32 {
-	for {
-		num, err := strconv.ParseFloat(inputData(msg), 32)
-		if err == nil {
-			// Ввод числа прошел без ошибок
-			return float32(num)
-		}
-		log.Fatalln("unable to parse input")
+	data := inputData(msg)
+	num, err := strconv.ParseFloat(data, 32)
+	if err != nil {
+		log.Fatalf("unable to parse input: %s", err)
 	}
+	return float32(num)
 }
 
 func EnterFloat64Number(msg string) float64 {
-	for {
-		num, err := strconv.ParseFloat(inputData(msg), 32)
-		if err == nil {
-			// Ввод числа прошел без ошибок
-			return num
-		}
-		log.Fatalln("unable to parse input")
+	data := inputData(msg)
+	num, err := strconv.ParseFloat(data, 64)
+	if err != nil {
+		log.Fatalf("unable to parse input: %s", err)
 	}
+	return num
 }
