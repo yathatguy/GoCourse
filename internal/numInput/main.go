@@ -3,6 +3,7 @@ package numInput
 import (
 	"fmt"
 	"log"
+	"os"
 	"strconv"
 )
 
@@ -12,7 +13,7 @@ func inputData(msg string) (data string){
 		log.Println("input error: ", err)
 	}
 	if data == "exit" {
-		panic(nil)
+		os.Exit(0)
 	}
 	return
 }
