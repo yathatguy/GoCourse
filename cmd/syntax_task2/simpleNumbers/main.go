@@ -17,8 +17,8 @@ func createArray(l int) []int {
 		fmt.Printf("  unable to create array with %v in length\n", l)
 		os.Exit(1)
 	}
-	for i := 0; i < l; i++ {
-		resArr[i] = i+1
+	for i := 1; i <= l; i++ {
+		resArr[i] = i
 	}
 	return resArr
 }
