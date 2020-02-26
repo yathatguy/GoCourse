@@ -107,7 +107,7 @@ func main() {
 		Height: 40,
 		Depth:  120,
 	}
-	
+
 	for _, c := range []Creature{man, dog} {
 		fmt.Printf("The %s's age is: %d\n", name(c), age(c))
 	}
