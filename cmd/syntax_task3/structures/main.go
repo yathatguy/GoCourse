@@ -5,13 +5,13 @@ import "fmt"
 type Car struct {
 	Brand string
 	Model string
-	Year string
+	Year  string
 	Trunk struct {
-		Volume uint
+		Volume   uint
 		Fullness uint
 	}
 	Engine struct {
-		Size float32
+		Size    float32
 		Started bool
 	}
 }
@@ -31,14 +31,14 @@ func createGle() Car {
 			Volume   uint
 			Fullness uint
 		}{
-			Volume: 3000,
+			Volume:   3000,
 			Fullness: 2700,
 		},
 		Engine: struct {
 			Size    float32
 			Started bool
 		}{
-			Size: 3000,
+			Size:    3000,
 			Started: false,
 		},
 	}
@@ -54,14 +54,14 @@ func createMaz() Car {
 			Volume   uint
 			Fullness uint
 		}{
-			Volume: 0,
+			Volume:   0,
 			Fullness: 0,
 		},
 		Engine: struct {
 			Size    float32
 			Started bool
 		}{
-			Size: 11100,
+			Size:    11100,
 			Started: false,
 		},
 	}
