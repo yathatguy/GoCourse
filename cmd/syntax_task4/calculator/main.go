@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -7,7 +6,7 @@ import (
 	"github.com/yathatguy/GoCourse/internal/calculator"
 )
 
-func main() {2
+func main() {
 	input := ""
 	for {
 		fmt.Print("> ")
