@@ -19,10 +19,19 @@ func main() {
 			break
 		}
 
+		if input == "help" {
+			printHelp()
+			continue
+		}
+
 		if res, err := calculator.Calculate(input); err == nil {
 			fmt.Printf("Результат: %v\n", res)
 		} else {
 			fmt.Println("Не удалось произвести вычисление")
 		}
 	}
+}
+
+func printHelp() {
+	fmt.Println("Тут должно быть описание help для программы \"Калькулятор\"")
 }
