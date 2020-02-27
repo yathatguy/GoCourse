@@ -2,11 +2,12 @@
 package main
 
 import (
-	"calculator/calculator"
 	"fmt"
+
+	"github.com/yathatguy/GoCourse/internal/calculator"
 )
 
-func main() {
+func main() {2
 	input := ""
 	for {
 		fmt.Print("> ")
