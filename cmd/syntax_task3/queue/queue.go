@@ -16,7 +16,7 @@ func Pop() (int, error) {
 	}
 
 	val := queue[0]
-	for i:= 0; i < len(queue)-1; i++ {
+	for i := 0; i < len(queue)-1; i++ {
 		queue[i] = queue[i+1]
 	}
 	queue = queue[:len(queue)-1]
