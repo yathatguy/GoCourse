@@ -119,5 +119,8 @@ func getStartPoint(x, y string) Point {
 		y: startY,
 	}
 
+	if !isCoordAvailable(startPoint.GetX(), startPoint.GetY()) {
+		log.Fatalf("Введены некорректные стартовые координаты: %s %s", x ,y)
+	}
 	return startPoint
 }
