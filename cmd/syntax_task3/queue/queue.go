@@ -6,11 +6,7 @@ import "errors"
 var queue []int
 
 func Push(i int) {
-	if len(queue) == 0 {
-		queue[0] = i
-	} else {
-		queue[len(queue)+1] = i
-	}
+	queue = append(queue, i)
 
 }
 
