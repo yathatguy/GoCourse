@@ -10,14 +10,15 @@ func Push(i int) {
 
 }
 
-func Pop() ([]int, int, error) {
+func Pop() (int, error) {
 	if len(queue) == 0 {
-		return nil, 0, errors.New("queue is empty")
+		return 0, errors.New("queue is empty")
 	} else {
 		val := queue[0]
 		for i:= 0; i < len(queue)-1; i++ {
 			queue[i] = queue[i+1]
 		}
-		return queue[:len(queue)-1], val, nil
+		queue = queue[:len(queue)-1]
+		return val, nil
 	}
 }
