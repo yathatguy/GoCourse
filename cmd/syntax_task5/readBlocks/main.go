@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("./cmd/syntax_task5/readLines/data.txt")
+	file, err := os.Open("./cmd/syntax_task5/readBlocks/data.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -22,11 +22,14 @@ func main() {
 	bs := make([]byte, bsSize)
 	blocks := int(stat.Size() / int64(bsSize))
 
-	for i := 0; i <= blocks+1; i++ {
-		a, err := file.Read(bs)
+	var res []byte
+
+	for i := 0; i < blocks+1; i++ {
+		l, err := file.Read(bs)
 		if err != nil {
 			log.Fatal(err)
 		}
-		fmt.Println(a)
+		res = append(res, bs[:l] ...)
 	}
+	fmt.Println(string(res))
 }
