@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 type Human struct {
-	Name string
-	Age uint
+	Name   string
+	Age    uint
 	Gender string
-	Alive bool
+	Alive  bool
 	Weight float32
 	Height float32
 }
@@ -24,10 +24,10 @@ func (h Human) name() string {
 }
 
 type Animal struct {
-	Name string
-	Age uint
-	Type string
-	Alive bool
+	Name   string
+	Age    uint
+	Type   string
+	Alive  bool
 	Weight float32
 	Height float32
 }
@@ -45,11 +45,11 @@ func (a Animal) name() string {
 }
 
 type Furniture struct {
-	Brand string
-	Type string
+	Brand  string
+	Type   string
 	Weight float32
 	Height float32
-	Depth float32
+	Depth  float32
 }
 
 func (f Furniture) height() float32 {
@@ -85,7 +85,7 @@ func name(thing Thing) string {
 
 func main() {
 	man := Human{
-		Name: "Dima",
+		Name:   "Dima",
 		Age:    36,
 		Gender: "M",
 		Alive:  true,
@@ -93,7 +93,7 @@ func main() {
 		Height: 168.0,
 	}
 	dog := Animal{
-		Name: "Fry",
+		Name:   "Fry",
 		Age:    7,
 		Type:   "Dog",
 		Alive:  true,
@@ -101,7 +101,7 @@ func main() {
 		Height: 37,
 	}
 	sofa := Furniture{
-		Brand: "Admiral",
+		Brand:  "Admiral",
 		Type:   "Sofa",
 		Weight: 32.5,
 		Height: 40,

@@ -19,7 +19,7 @@ func findSimple(n int) {
 		default:
 			isDividable = false
 			for j := 2; j <= int(math.Sqrt(float64(i))); j++ {
-				if i % j == 0 {
+				if i%j == 0 {
 					isDividable = true
 					break
 				}

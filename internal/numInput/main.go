@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func inputData(msg string) (data string){
+func inputData(msg string) (data string) {
 	fmt.Print(msg)
 	if _, err := fmt.Scanln(&data); err != nil {
 		log.Println("input error: ", err)

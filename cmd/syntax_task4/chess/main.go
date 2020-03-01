@@ -98,7 +98,6 @@ func main() {
 
 	startPoint := getStartPoint(x, y)
 
-
 	kn := NewKnight(startPoint)
 	fmt.Println(kn.CalculateAvailable())
 }
@@ -120,7 +119,7 @@ func getStartPoint(x, y string) Point {
 	}
 
 	if !isCoordAvailable(startPoint.GetX(), startPoint.GetY()) {
-		log.Fatalf("Введены некорректные стартовые координаты: %s %s", x ,y)
+		log.Fatalf("Введены некорректные стартовые координаты: %s %s", x, y)
 	}
 	return startPoint
 }
