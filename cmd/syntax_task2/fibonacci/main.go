@@ -8,10 +8,10 @@ import (
 func main() {
 	var (
 		prevMinusOne = big.NewInt(0)
-		prev = big.NewInt(0)
-		fibNum = big.NewInt(0)
+		prev         = big.NewInt(0)
+		fibNum       = big.NewInt(0)
 	)
-	for i := 0; i<100; i++ {
+	for i := 0; i < 100; i++ {
 		switch i {
 		case 0:
 			fibNum = big.NewInt(0)

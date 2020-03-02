@@ -7,8 +7,8 @@ import (
 
 var (
 	startAmount float64
-	percentage float64
-	finalSum float64
+	percentage  float64
+	finalSum    float64
 )
 
 func main() {
@@ -40,7 +40,7 @@ func calcFinalSum(amount float64, l uint) float64 {
 	if l == 1 {
 		total = startAmount
 	} else {
-		total = calcFinalSum(amount, l-1) * (1 + percentage / 100)
+		total = calcFinalSum(amount, l-1) * (1 + percentage/100)
 	}
 	return total
 }

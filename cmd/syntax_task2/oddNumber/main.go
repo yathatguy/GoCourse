@@ -13,7 +13,7 @@ func main() {
 		}
 	}()
 	num := numInput.EnterIntNumber("Введите число: ")
-	if num % 2 == 0 {
+	if num%2 == 0 {
 		fmt.Println("Четное")
 	} else {
 		fmt.Println("Не четное")

@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -7,7 +6,7 @@ import (
 )
 
 type Contact struct {
-	Name string
+	Name  string
 	Phone []uint
 }
 
