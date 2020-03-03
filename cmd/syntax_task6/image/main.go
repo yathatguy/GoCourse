@@ -31,7 +31,9 @@ func drawLines() {
 		log.Fatalf("Failed create file: %s", err)
 	}
 	defer file.Close()
-	png.Encode(file, img)
+	if err := png.Encode(file, img); err != nil {
+		log.Fatalf("Failed save image to file: %s", err)
+	}
 
 }
 
