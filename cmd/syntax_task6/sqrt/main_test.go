@@ -53,3 +53,9 @@ func TestCalc(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkCalc(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		calc(1, -4, 4)
+	}
+}
