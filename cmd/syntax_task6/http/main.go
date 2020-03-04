@@ -39,7 +39,11 @@ func genIndx(req *http.Request) []byte {
 		log.Fatal(err)
 	}
 
-	content, err := ioutil.ReadFile("./cmd/syntax_task6/http/static/index.html")
+	_, err = f.Seek(0, io.SeekStart)
+	if err != nil {
+		log.Fatal(err)
+	}
+	content, err := ioutil.ReadAll(f)
 	if err != nil {
 		log.Fatal(err)
 	}
