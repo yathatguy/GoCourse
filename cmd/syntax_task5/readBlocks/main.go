@@ -29,7 +29,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		res = append(res, bs[:l] ...)
+		res = append(res, bs[:l]...)
 	}
 	fmt.Println(string(res))
 }

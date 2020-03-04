@@ -1,0 +1,12 @@
+mode: set
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:11.13,18.16 6 0
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:22.2,22.14 1 0
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:18.16,20.3 1 0
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:22.14,24.3 1 0
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:24.8,26.3 1 0
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:30.58,33.11 3 1
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:38.2,38.13 1 1
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:47.2,47.20 1 1
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:33.11,36.3 2 1
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:39.12,41.62 2 1
+github.com/yathatguy/GoCourse/cmd/syntax_task6/sqrt/main.go:42.14,44.10 2 1
