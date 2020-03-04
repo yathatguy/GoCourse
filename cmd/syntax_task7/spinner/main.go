@@ -10,7 +10,7 @@ var wg sync.WaitGroup
 
 func main() {
 	wg.Add(1)
-	spinner(50 * time.Millisecond)
+	go spinner(50 * time.Millisecond)
 	wg.Wait()
 }
 
