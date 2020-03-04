@@ -1,9 +1,9 @@
 package main
 
 import (
-	"GoCourse/pkg/mod/golang.org/x/tools@v0.0.0-20191030062658-86caa796c7ab/go/ssa/interp/testdata/src/os"
 	"fmt"
 	"math"
+	"os"
 )
 
 func main() {
