@@ -63,5 +63,8 @@ func main() {
 	http.Handle("/", fs)
 	http.HandleFunc("/hello", hello)
 
-	http.ListenAndServe(":80", nil)
+	err := http.ListenAndServe(":80", nil)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
